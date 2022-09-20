@@ -21,11 +21,6 @@ import Comment from "./Comment";
 import React, { useState } from "react";
 import { getImgLink, getRelativeTime } from "../../utils/helper";
 import { useAuth } from "../../contexts/auth";
-import {
-  useCreateOwnHighlightComment,
-  useDeleteOwnHighlightComment,
-} from "../../hooks/useHighlights";
-import { useDeleteOwnNewsComment } from "../../hooks/useNews";
 
 export enum CommentTypeEnum {
   highlightComment = "highlight-comment",
