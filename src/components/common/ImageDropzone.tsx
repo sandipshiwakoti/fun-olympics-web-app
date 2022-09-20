@@ -13,6 +13,8 @@ import React, { useCallback, useMemo, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { getImgLink } from "../../utils/helper";
 
+/*eslint-disable */
+
 interface DropzoneComponentProps {
   defaultValue: any;
   file: any;
@@ -125,7 +127,7 @@ const DropzoneComponent: React.FC<DropzoneComponentProps> = ({
             size="2xl"
           />
         </Box>
-        <Box style={style}>
+        <Box style={{ ...style, flexDirection: "row" }}>
           <Text fontWeight={"bold"} fontSize="lg" textAlign="center">
             Drag and drop your image or click to select
           </Text>
