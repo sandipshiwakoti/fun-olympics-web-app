@@ -55,7 +55,7 @@ const Highlights = () => {
   const getView = () => {
     if (isLoading) return <LoadingSpinner />;
 
-    if (highlights.data.items.length > 0) {
+    if (highlights?.data?.items?.length > 0) {
       const pagesCount = highlights.data.meta.totalPages;
       const currentPage = highlights.data.meta.currentPage;
       const onPageChange = (page: number) => setCurrentPage(page);

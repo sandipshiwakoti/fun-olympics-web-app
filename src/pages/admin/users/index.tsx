@@ -51,7 +51,7 @@ const Users = () => {
   const getView = () => {
     if (isLoading) return <LoadingSpinner />;
 
-    if (users.data.items.length > 0) {
+    if (users?.data?.items?.length > 0) {
       const pagesCount = users.data.meta.totalPages;
       const currentPage = users.data.meta.currentPage;
       const onPageChange = (page: number) => setCurrentPage(page);

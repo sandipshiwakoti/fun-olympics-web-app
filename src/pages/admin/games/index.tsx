@@ -50,7 +50,7 @@ const Games = () => {
   const getView = () => {
     if (isLoading) return <LoadingSpinner />;
 
-    if (games.data.items.length > 0) {
+    if (games?.data?.items?.length > 0) {
       const pagesCount = games.data.meta.totalPages;
       const currentPage = games.data.meta.currentPage;
       const onPageChange = (page: number) => setCurrentPage(page);
