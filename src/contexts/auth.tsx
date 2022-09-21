@@ -11,6 +11,7 @@ import * as jose from "jose";
 import { getProfile, login as loginUser } from "../api/api";
 import { useToast } from "@chakra-ui/react";
 import axios from "axios";
+import jwt from "jsonwebtoken";
 
 interface AuthContextProps {
   isAuthenticated: boolean;
@@ -47,6 +48,22 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   useEffect(() => {
     fetchUser();
   }, [fetchUser]);
+
+  useEffect(() => {
+    const publicRoutes = ["/", "/auth/login", "/auth/register"];
+    const isPrivate = !publicRoutes.includes(router.pathname);
+    const token = Cookies.get("token") || "";
+    const secret = process.env.NEXT_PUBLIC_JWT_SECRET || "";
+    let isVerified = false;
+
+    try {
+      isVerified = !!jwt.verify(token, secret);
+    } catch (err) {}
+
+    if (isPrivate && !isVerified) {
+      router.replace("/auth/login");
+    }
+  }, [router]);
 
   const login = async (payload: any) => {
     setIsLoading(true);

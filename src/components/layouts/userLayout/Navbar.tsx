@@ -49,7 +49,7 @@ const Navbar = () => {
             ))}
           </HStack>
 
-          {user ? (
+          {user && user.role === "user" ? (
             <HStack>
               <Avatar
                 bg="gray.200"
