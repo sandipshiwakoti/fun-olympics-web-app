@@ -49,7 +49,7 @@ const Navbar = () => {
             ))}
           </HStack>
 
-          {user && user.role === "user" ? (
+          {user ? (
             <HStack>
               <Avatar
                 bg="gray.200"
@@ -68,7 +68,14 @@ const Navbar = () => {
                 </MenuButton>
                 <MenuList>
                   <MenuItem>
-                    <NextLink href="/auth/update-profile" passHref>
+                    <NextLink
+                      href={
+                        user.role === "user"
+                          ? "auth/update-profile"
+                          : "admin/update-profile"
+                      }
+                      passHref
+                    >
                       Update Profile
                     </NextLink>
                   </MenuItem>

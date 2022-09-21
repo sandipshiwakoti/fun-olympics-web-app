@@ -52,22 +52,22 @@ const Home = () => {
 
   useEffect(() => {
     if (!isUsersLoading) {
-      setUsersCount(users.data.meta.totalItems);
+      setUsersCount(users?.data.meta.totalItems);
     }
     if (!isGamesLoading) {
-      setGamesCount(games.data.meta.totalItems);
+      setGamesCount(games?.data.meta.totalItems);
     }
     if (!isBroadcastsLoading) {
-      setBroadcastsCount(broadcasts.data.meta.totalItems);
+      setBroadcastsCount(broadcasts?.data.meta.totalItems);
     }
     if (!isNewsLoading) {
-      setNewsCount(news.data.meta.totalItems);
+      setNewsCount(news?.data.meta.totalItems);
     }
     if (!isHighlightsLoading) {
-      setHighlightsCount(highlights.data.meta.totalItems);
+      setHighlightsCount(highlights?.data.meta.totalItems);
     }
     if (!isNewsLoading) {
-      setNewsCount(news.data.meta.totalItems);
+      setNewsCount(news?.data.meta.totalItems);
     }
   }, [
     isUsersLoading,
@@ -84,22 +84,22 @@ const Home = () => {
 
   useEffect(() => {
     if (!isUsersLoading) {
-      setUsersCount(users.data.meta.totalItems);
+      setUsersCount(users?.data.meta.totalItems);
     }
     if (!isGamesLoading) {
-      setGamesCount(games.data.meta.totalItems);
+      setGamesCount(games?.data.meta.totalItems);
     }
     if (!isBroadcastsLoading) {
-      setBroadcastsCount(broadcasts.data.meta.totalItems);
+      setBroadcastsCount(broadcasts?.data.meta.totalItems);
     }
     if (!isNewsLoading) {
-      setNewsCount(news.data.meta.totalItems);
+      setNewsCount(news?.data.meta.totalItems);
     }
     if (!isHighlightsLoading) {
-      setHighlightsCount(highlights.data.meta.totalItems);
+      setHighlightsCount(highlights?.data.meta.totalItems);
     }
     if (!isNewsLoading) {
-      setNewsCount(news.data.meta.totalItems);
+      setNewsCount(news?.data.meta.totalItems);
     }
   }, [
     isUsersLoading,
@@ -116,31 +116,31 @@ const Home = () => {
 
   useEffect(() => {
     if (!isUsersLoading) {
-      setUsersCount(users.data.meta.totalItems);
+      setUsersCount(users?.data.meta.totalItems);
     }
   }, [isUsersLoading, , users]);
 
   useEffect(() => {
     if (!isGamesLoading) {
-      setGamesCount(games.data.meta.totalItems);
+      setGamesCount(games?.data.meta.totalItems);
     }
   }, [isGamesLoading, games]);
 
   useEffect(() => {
     if (!isBroadcastsLoading) {
-      setBroadcastsCount(broadcasts.data.meta.totalItems);
+      setBroadcastsCount(broadcasts?.data.meta.totalItems);
     }
   }, [isBroadcastsLoading, broadcasts]);
 
   useEffect(() => {
     if (!isNewsLoading) {
-      setNewsCount(news.data.meta.totalItems);
+      setNewsCount(news?.data.meta.totalItems);
     }
   }, [isNewsLoading, news]);
 
   useEffect(() => {
     if (!isHighlightsLoading) {
-      setHighlightsCount(highlights.data.meta.totalItems);
+      setHighlightsCount(highlights?.data.meta.totalItems);
     }
   }, [isHighlightsLoading, highlights]);
 
@@ -164,7 +164,7 @@ const Home = () => {
                 />
               </Center>
               <Text fontWeight="extrabold" fontSize="5xl" textAlign="center">
-                {insight.count}
+                {insight.count || 0}
               </Text>
               <Text
                 fontWeight="semibold"
