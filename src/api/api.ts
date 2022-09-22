@@ -107,7 +107,7 @@ export const removeUser = (id: number) => {
 // games
 export const getGames = ({ pageParam, search }: RequestParamsPayload) => {
   return axios
-    .get(urls.game, { params: { page: pageParam, search } })
+    .get(urls.game, { ...config, params: { page: pageParam, search } })
     .then((response) => {
       return response.data;
     });
