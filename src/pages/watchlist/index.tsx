@@ -55,6 +55,7 @@ const Watchlist = () => {
                 alt="No Event"
                 h="100px"
                 w="100px"
+                objectFit="cover"
               />
             </Center>
             <Text

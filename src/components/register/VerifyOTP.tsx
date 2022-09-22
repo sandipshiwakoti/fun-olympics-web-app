@@ -65,7 +65,13 @@ const VerifyOTP: React.FC<VerifyOTPProps> = ({
     <Box mx="auto">
       <Stack>
         <Center>
-          <Image src="/img/otp.png" w="200px" h="200px" alt="OTP" />
+          <Image
+            src="/img/otp.png"
+            w="200px"
+            h="200px"
+            alt="OTP"
+            objectFit="cover"
+          />
         </Center>
         <Text my="2" fontWeight="semibold">
           Please enter your OTP sent to email and mobile

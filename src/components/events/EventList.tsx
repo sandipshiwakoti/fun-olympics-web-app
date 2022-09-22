@@ -53,7 +53,13 @@ const EventList: React.FC<EventListProps> = ({ title, data }) => {
       ) : (
         <Box>
           <Center mb="2">
-            <Image src="/img/no-event.png" alt="No Event" h="100px" w="100px" />
+            <Image
+              src="/img/no-event.png"
+              alt="No Event"
+              h="100px"
+              w="100px"
+              objectFit="cover"
+            />
           </Center>
           <Text
             textAlign="center"

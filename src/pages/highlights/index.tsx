@@ -83,7 +83,13 @@ const Highlights = () => {
     return (
       <Box py="4">
         <Center mb="2">
-          <Image src="/img/highlight.png" alt="No Event" h="100px" w="100px" />
+          <Image
+            src="/img/highlight.png"
+            alt="No Event"
+            h="100px"
+            w="100px"
+            objectFit="cover"
+          />
         </Center>
         <Text
           textAlign="center"

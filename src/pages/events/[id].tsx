@@ -89,6 +89,7 @@ const LiveEvent = () => {
           alt="live"
           rounded="2xl"
           mb="2"
+          objectFit="cover"
         />
         <HStack alignItems="start" gap="2">
           <ReactPlayer url={event.link} playing={true} light={true} />

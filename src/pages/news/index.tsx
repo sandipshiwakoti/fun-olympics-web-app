@@ -120,6 +120,7 @@ const News = () => {
             alt="No news articles"
             h="100px"
             w="100px"
+            objectFit="cover"
           />
         </Center>
         <Text

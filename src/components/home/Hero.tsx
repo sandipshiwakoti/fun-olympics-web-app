@@ -50,6 +50,7 @@ const Hero = () => {
               h="38rem"
               alt="hero image"
               transform="scaleX(-1)"
+              objectFit="cover"
             />
           </HStack>
         </Box>
