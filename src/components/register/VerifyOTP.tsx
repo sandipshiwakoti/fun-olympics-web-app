@@ -2,18 +2,15 @@ import {
   Box,
   Button,
   Center,
-  Heading,
-  HStack,
   PinInput,
   PinInputField,
   Stack,
   Text,
-  VStack,
-  Image,
   useToast,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React from "react";
 import { useVerifyRegistration } from "../../hooks/useAuth";
+import Image from "../common/Image";
 
 type VerifyOTPProps = {
   otp: string;

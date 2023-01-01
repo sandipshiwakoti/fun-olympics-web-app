@@ -4,11 +4,8 @@ import {
   Box,
   Heading,
   Text,
-  Image,
-  SimpleGrid,
   Center,
   HStack,
-  VStack,
   Input,
   Avatar,
   InputGroup,
@@ -17,10 +14,9 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  PopoverBody,
   useToast,
 } from "@chakra-ui/react";
-import React, { RefObject, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CenterContainer from "../../components/common/CenterContainer";
 import MainContainer from "../../components/common/MainContainer";
 import ReactPlayer from "react-player";
@@ -32,6 +28,7 @@ import {
   useCreateOwnBroadcastComment,
 } from "../../hooks/useBroadcasts";
 import LoadingSpinner from "../../components/common/LoadingSpinner";
+import Image from "../../components/common/Image";
 
 const LiveEvent = () => {
   const router = useRouter();

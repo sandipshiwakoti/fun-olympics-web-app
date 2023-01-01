@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react";
+import Image from "../common/Image";
 
 interface LogoProps {
   color?: "dark" | "light";

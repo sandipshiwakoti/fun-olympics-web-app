@@ -3,9 +3,7 @@ import {
   Center,
   Heading,
   SimpleGrid,
-  Image,
   Text,
-  Button,
   InputGroup,
   Input,
   InputRightElement,
@@ -16,10 +14,10 @@ import { FaSearch } from "react-icons/fa";
 import CenterContainer from "../../components/common/CenterContainer";
 import LoadingSpinner from "../../components/common/LoadingSpinner";
 import MainContainer from "../../components/common/MainContainer";
-import HighlightListItem from "../../components/highlights/HighlightListItem";
 import NewsListItem from "../../components/news/NewsListItem";
 import { useDebounce } from "../../hooks/useDebounce";
 import { useNews } from "../../hooks/useNews";
+import Image from "../../components/common/Image";
 
 const data = [
   {

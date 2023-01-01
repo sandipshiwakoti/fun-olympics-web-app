@@ -7,12 +7,11 @@ import {
   Input,
 } from "@chakra-ui/react";
 import React from "react";
-import { Controller, useForm, useFormContext } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import ImageDropzone from "../../../../components/common/ImageDropzone";
 import { User } from "../../../../types/user";
-import { useGamesForTable } from "../../../../hooks/useGames";
 import ReactSelect from "react-select";
 import { countries } from "../../../../data/auth";
 

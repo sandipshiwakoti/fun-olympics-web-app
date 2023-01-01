@@ -3,7 +3,6 @@ import {
   Center,
   Heading,
   SimpleGrid,
-  Image,
   Text,
   InputRightElement,
   InputGroup,
@@ -18,6 +17,7 @@ import MainContainer from "../../components/common/MainContainer";
 import HighlightListItem from "../../components/highlights/HighlightListItem";
 import { useDebounce } from "../../hooks/useDebounce";
 import { useHighlights } from "../../hooks/useHighlights";
+import Image from "../../components/common/Image";
 import { useNews } from "../../hooks/useNews";
 
 const Highlights = () => {

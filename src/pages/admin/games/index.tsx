@@ -5,19 +5,16 @@ import {
   TableContainer,
   Tbody,
   Td,
-  Text,
   Th,
   Thead,
   Tr,
-  Image,
   Icon,
   Input,
   HStack,
   InputGroup,
   InputLeftElement,
-  Button,
 } from "@chakra-ui/react";
-import React, { ReactElement, useEffect, useRef, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import LoadingSpinner from "../../../components/common/LoadingSpinner";
 import { useGamesForTable } from "../../../hooks/useGames";
@@ -27,6 +24,7 @@ import EditGameButton from "./components/EditGameButton";
 import RemoveGameButton from "./components/RemoveGameButton";
 import { useDebounce } from "../../../hooks/useDebounce";
 import TablePagination from "../../../components/common/TablePagination";
+import Image from "../../../components/common/Image";
 
 const Games = () => {
   const [currentPage, setCurrentPage] = useState(1);

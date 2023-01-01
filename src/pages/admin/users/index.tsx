@@ -5,19 +5,16 @@ import {
   TableContainer,
   Tbody,
   Td,
-  Text,
   Th,
   Thead,
   Tr,
-  Image,
   Icon,
   Input,
   HStack,
   InputGroup,
   InputLeftElement,
-  Button,
 } from "@chakra-ui/react";
-import React, { ReactElement, useEffect, useRef, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import LoadingSpinner from "../../../components/common/LoadingSpinner";
 import { getImgLink } from "../../../utils/helper";
@@ -28,6 +25,7 @@ import CreateUserButton from "./components/CreateUserButton";
 import EditUserButton from "./components/EditUserButton";
 import RemoveUserButton from "./components/RemoveUserButton";
 import ResetPasswordButton from "./components/ResetPasswordButton";
+import Image from "../../../components/common/Image";
 
 const Users = () => {
   const [currentPage, setCurrentPage] = useState(1);

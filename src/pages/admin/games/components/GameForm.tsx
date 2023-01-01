@@ -1,16 +1,13 @@
 import {
-  Box,
   Button,
-  Center,
   FormControl,
   FormErrorMessage,
   FormLabel,
   HStack,
   Input,
-  InputGroup,
 } from "@chakra-ui/react";
 import React from "react";
-import { useForm, useFormContext } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import ImageDropzone from "../../../../components/common/ImageDropzone";

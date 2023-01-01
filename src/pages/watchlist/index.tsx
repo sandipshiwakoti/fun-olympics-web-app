@@ -1,22 +1,15 @@
-import {
-  Box,
-  Center,
-  Heading,
-  SimpleGrid,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CenterContainer from "../../components/common/CenterContainer";
 import MainContainer from "../../components/common/MainContainer";
 import EventListItem from "../../components/events/EventListItem";
 import { RootState } from "../../store";
-import { isEventOld } from "../../utils/helper";
 import {
   addEventToWatchlist,
   removeEventfromWatchlist,
 } from "./watchlistSlice";
+import Image from "../../components/common/Image";
 
 const Watchlist = () => {
   const dispatch = useDispatch();

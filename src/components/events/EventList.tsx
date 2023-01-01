@@ -1,11 +1,4 @@
-import {
-  Center,
-  Heading,
-  SimpleGrid,
-  Text,
-  Image,
-  Box,
-} from "@chakra-ui/react";
+import { Center, Heading, SimpleGrid, Text, Box } from "@chakra-ui/react";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -14,6 +7,7 @@ import {
 } from "../../pages/watchlist/watchlistSlice";
 import { RootState } from "../../store";
 import EventListItem from "./EventListItem";
+import Image from "../common/Image";
 
 interface EventListProps {
   title: string;

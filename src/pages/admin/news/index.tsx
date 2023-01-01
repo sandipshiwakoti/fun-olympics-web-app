@@ -2,22 +2,18 @@ import {
   Box,
   Heading,
   Table,
-  TableContainer,
   Tbody,
   Td,
-  Text,
   Th,
   Thead,
   Tr,
-  Image,
   Icon,
   Input,
   HStack,
   InputGroup,
   InputLeftElement,
-  Button,
 } from "@chakra-ui/react";
-import React, { ReactElement, useEffect, useRef, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import LoadingSpinner from "../../../components/common/LoadingSpinner";
 import {
@@ -31,7 +27,7 @@ import { useNewsForTable } from "../../../hooks/useNews";
 import EditNewsButton from "./components/EditNewsButton";
 import RemoveNewsButton from "./components/RemoveNewsButton";
 import CreateNewsButton from "./components/CreateNewsButton";
-import { useAuth } from "../../../contexts/auth";
+import Image from "../../../components/common/Image";
 
 const News = () => {
   const [currentPage, setCurrentPage] = useState(1);

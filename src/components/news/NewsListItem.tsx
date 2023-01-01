@@ -1,27 +1,8 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  HStack,
-  Avatar,
-  Flex,
-  Text,
-  Image,
-  Badge,
-  Icon,
-} from "@chakra-ui/react";
-import { BsBookmarkHeartFill, BsBookmarkHeart } from "react-icons/bs";
-import {
-  getFormattedDateWithoutTime,
-  getFirstLetterCapitalized,
-  isEventLive,
-  getFormattedTime,
-  isEventOld,
-  getTruncatedText,
-  getImgLink,
-} from "../../utils/helper";
+import { Box, Text } from "@chakra-ui/react";
+import { getTruncatedText, getImgLink } from "../../utils/helper";
 import NextLink from "next/link";
-import { StringLocale } from "yup/lib/locale";
+import Image from "../common/Image";
 
 interface NewsListItemProps {
   id: number;

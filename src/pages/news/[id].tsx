@@ -1,17 +1,6 @@
-import {
-  Box,
-  Center,
-  Heading,
-  HStack,
-  Text,
-  Image,
-  Avatar,
-  Input,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Center, Heading, Text, Button } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import ReactPlayer from "react-player";
 import Comments, { CommentTypeEnum } from "../../components/comments/Comments";
 import CenterContainer from "../../components/common/CenterContainer";
 import LoadingSpinner from "../../components/common/LoadingSpinner";
@@ -22,11 +11,8 @@ import {
   useNewsComments,
 } from "../../hooks/useComments";
 import { useNewsById } from "../../hooks/useNews";
-import {
-  getFormattedDateWithoutTime,
-  getImgLink,
-  getRelativeTime,
-} from "../../utils/helper";
+import { getFormattedDateWithoutTime, getImgLink } from "../../utils/helper";
+import Image from "../../components/common/Image";
 
 const NewsArticle = () => {
   const router = useRouter();

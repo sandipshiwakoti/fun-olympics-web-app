@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  HStack,
-  Avatar,
-  Flex,
-  Text,
-  Image,
-  Badge,
-  Icon,
-  Button,
-} from "@chakra-ui/react";
+import { Box, HStack, Text, Badge, Icon, Button } from "@chakra-ui/react";
 import {
   BsBookmarkHeartFill,
   BsBookmarkHeart,
@@ -18,7 +7,6 @@ import {
 } from "react-icons/bs";
 import {
   getFormattedDateWithoutTime,
-  getFirstLetterCapitalized,
   isEventLive,
   getFormattedTime,
   isEventOld,
@@ -26,10 +14,8 @@ import {
   getImgLink,
 } from "../../utils/helper";
 import NextLink from "next/link";
-import { StringLocale } from "yup/lib/locale";
 import { Game } from "../../types/game";
-import { useDispatch } from "react-redux";
-import { addEventToWatchlist } from "../../pages/watchlist/watchlistSlice";
+import Image from "../common/Image";
 
 interface EventListItemProps {
   id: number;

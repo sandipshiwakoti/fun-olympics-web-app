@@ -1,7 +1,8 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { Game } from "../../types/game";
 import { getImgLink } from "../../utils/helper";
+import Image from "../common/Image";
 
 interface GameCardProps extends Game {}
 

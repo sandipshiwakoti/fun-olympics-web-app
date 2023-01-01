@@ -1,8 +1,9 @@
-import { Box, Heading, HStack, Text, Image, Button } from "@chakra-ui/react";
+import { Box, Heading, HStack, Text, Button } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import CenterContainer from "../common/CenterContainer";
 import MainContainer from "../common/MainContainer";
+import Image from "../common/Image";
 
 const Hero = () => {
   return (

@@ -1,6 +1,5 @@
 import {
   Box,
-  Stack,
   Button,
   FormControl,
   FormErrorMessage,
@@ -12,23 +11,14 @@ import {
   InputLeftElement,
   useToast,
 } from "@chakra-ui/react";
-import CenterContainer from "../../../components/common/CenterContainer";
-import MainContainer from "../../../components/common/MainContainer";
 import { Controller, useForm } from "react-hook-form";
 import { FaUserAlt, FaEnvelope } from "react-icons/fa";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import {
-  useGetProfile,
-  useLogin,
-  useUpdateProfle,
-} from "../../../hooks/useAuth";
-import Cookies from "js-cookie";
-import { useRouter } from "next/router";
-import { ReactElement, useEffect, useState } from "react";
+import { useGetProfile, useUpdateProfle } from "../../../hooks/useAuth";
+import { ReactElement, useEffect } from "react";
 import { useAuth } from "../../../contexts/auth";
 import { UpdateProfile } from "../../../types/user";
-import { useGames, useGamesForTable } from "../../../hooks/useGames";
 import { Select } from "chakra-react-select";
 import { countries } from "../../../data/auth";
 import ImageDropzone from "../../../components/common/ImageDropzone";

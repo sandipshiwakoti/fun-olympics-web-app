@@ -10,12 +10,11 @@ import {
   InputLeftElement,
 } from "@chakra-ui/react";
 import React from "react";
-import { Controller, useForm, useFormContext } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import ImageDropzone from "../../../../components/common/ImageDropzone";
-import { CreateUser, User } from "../../../../types/user";
-import { useGamesForTable } from "../../../../hooks/useGames";
+import { CreateUser } from "../../../../types/user";
 import ReactSelect from "react-select";
 import { countries } from "../../../../data/auth";
 import { FaLock } from "react-icons/fa";

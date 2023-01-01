@@ -8,7 +8,6 @@ import {
   HStack,
   Input,
   Text,
-  Image,
   InputGroup,
   InputRightElement,
   Popover,
@@ -18,9 +17,10 @@ import {
 } from "@chakra-ui/react";
 import { BsEmojiHeartEyes } from "react-icons/bs";
 import Comment from "./Comment";
-import React, { useState } from "react";
-import { getImgLink, getRelativeTime } from "../../utils/helper";
+import React from "react";
+import { getImgLink } from "../../utils/helper";
 import { useAuth } from "../../contexts/auth";
+import Image from "../common/Image";
 
 export enum CommentTypeEnum {
   highlightComment = "highlight-comment",

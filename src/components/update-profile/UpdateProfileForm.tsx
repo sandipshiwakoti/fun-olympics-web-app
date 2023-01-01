@@ -1,6 +1,5 @@
 import {
   Box,
-  Stack,
   Button,
   FormControl,
   FormErrorMessage,
@@ -17,13 +16,10 @@ import { FaUserAlt, FaEnvelope } from "react-icons/fa";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { UpdateProfile } from "../../types/user";
-import Cookies from "js-cookie";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Select } from "chakra-react-select";
 import { useAuth } from "../../contexts/auth";
 import { countries } from "../../data/auth";
-import { useGamesForTable } from "../../hooks/useGames";
 import { useGetProfile, useUpdateProfle } from "../../hooks/useAuth";
 import ImageDropzone from "../common/ImageDropzone";
 
