@@ -5,12 +5,12 @@ import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(utc);
 dayjs.extend(relativeTime);
 
-import { baseUrl } from "../config/url";
+import { baseUrl, imageFallbackUrl } from "../config/url";
 
 export const getImgLink = (img: string) => {
   return img
     ? `${baseUrl}/${img}`
-    : `https://mapbiomas.org/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png`;
+    : imageFallbackUrl;
 };
 
 export const getFirstLetterCapitalized = (title: string) => {
